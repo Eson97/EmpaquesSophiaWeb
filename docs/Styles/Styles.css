@@ -13,3 +13,137 @@
     background-color: aqua;
     min-height: 100px;
 }
+.btn-dark{
+    border-color: #bf9152;
+    background-color: #e2b77a;
+    
+    
+}
+.btn-dark:hover{
+    border-color: #bf9152;
+    background-color: #704f25
+}
+.btn-dark:active{
+    border-color: #bf9152;
+    background-color: #704f25
+}
+/*#imagen
+{
+    width: 200px;
+    height: 300px;
+} */
+#informacion
+{
+    background-color: grey;
+
+    
+}
+#cuadricula
+{
+    max-width: 3000px;
+    max-height: 2000px;
+}
+
+#img-producto
+{
+    background-color: blanchedalmond;
+    width: 25%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*
+#img_inicio
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+} */
+
+.barra
+{
+    border-style: double;
+    border-width: thick;
+    border-color: black;
+    /*border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: burlywood;
+    border-right-color: transparent; */
+}
+
+/*@media (max-width:768px)
+{
+    h5
+    {
+        font-size: smaller;
+    }
+    p
+    {
+        font-size: smaller;
+    }
+}*/
+
+
+@media (max-width:549px)
+{
+    h5
+    {
+        font-size: medium;
+    }
+    p
+    {
+        font-size: larger;
+    }
+    h6
+    {
+        font-size: small;
+    }
+    h2
+    {
+        font-size: medium;
+    }
+    h1
+    {
+        font-size: medium;
+    }
+    
+    
+}
+
+@media (min-width: 550px) and (max-width: 768px)
+{
+    h5
+    {
+        font-size: larger;
+    }
+    p
+    {
+        font-size: larger;
+    }
+    h6
+    {
+        font-size: small;
+    }
+    h2
+    {
+        font-size: larger;
+    }
+    h1
+    {
+        font-size: larger;
+    }
+}
+
+
+@media (min-width: 769px)
+{
+    
+    p
+    {
+        font-size: larger;
+        text-align: justify;
+    }
+   
+}
+
+

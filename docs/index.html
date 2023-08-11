@@ -2,130 +2,147 @@
 <html lang="es">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="./Styles/Styles.css">
-    
-    <title>Empaques Sophia</title>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./Styles/Styles.css">
+
+  <title>Empaques Sophia</title>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+  <!--MENU-->
+  <nav class="navbar navbar-expand-lg sticky-top"
+    style="background-color: rgb(255, 255, 255); border-style:groove; border-width:thick; border-bottom-color:blanchedalmond; border-left-color: transparent; border-top-color: transparent; border-right-color: transparent;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="Assets/logo.png" width="60px" height="45px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#"
+              style="font-weight: bold; font-family:sans-serif; font-size:large; color: rgb(0, 0, 0);">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Productos/productos.html"
+              style="font-weight: bold; font-family:sans-serif; font-size:large; color: rgb(0, 0, 0);">PRODUCTOS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Contacto/contacto.html"
+              style="font-weight: bold; font-family:sans-serif; font-size:large; color: rgb(0, 0, 0);">CONTACTO</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav d-flex align-items-center">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./Productos/productos.html">Productos</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link" href="#empresa">Empresa</a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link" href="./Contacto/contacto.html">Contacto</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <!-- START PAGE -->
 
-      <!-- START PAGE -->
-
-      <!-- CAROUSEL -->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="Assets/testCarousel1.png" class="d-block w-100" >
-          </div>
+  <!-- CAROUSEL -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Assets/carrusel1.jpg" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="Assets/carrusel2.png" class="d-block w-100">
+      </div>
+      <!--
           <div class="carousel-item">
-            <img src="Assets/testCarousel2.png" class="d-block w-100" >
+            <img src="Assets/carrusel2.png" class="d-block w-100" >
           </div>
-          <div class="carousel-item">
-            <img src="Assets/testCarousel3.png" class="d-block w-100" >
-          </div>
+        -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- INTRODUCION -->
+  <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+    <h2 class="text-center text-muted "
+      style="font-style: italic; font-family: Arial; font-weight: bold; color: black;">SOBRE NOSOTROS</h3>
+      <p class="text-center text-muted" style="text-align: justify;">Somos una empresa de distribucion y elaboracion de
+        material de empaque y embalaje con mas de ocho años de experiencia.</p>
+  </div>
+
+  <!-- PRODUCTOS -->
+  <div class="mt-5 d-flex flex-column">
+    <h2 class="text-center text-muted" style="font-style: italic; font-family: Arial; font-weight: bold; color: black;">
+      NUESTROS PRODUCTOS</h3>
+      <p class="text-center text-muted" style="text-align: justify;">Nuestro producto lider es la pelicula estirable
+        para paletizado tipo stretch, en manual y automatico en cualquier medida y calibre comercial</p>
+  </div>
+
+  <div class="container align-items-center">
+    <div class="row row-cols-auto">
+      <!--PRODUCTO 1-->
+      <div class="col-lg-4 col-md-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="card m-2" style="background-color: blanchedalmond;">
+          <img id="imagen_inicio" src="./Assets/pelicula_stretch2.png" class="card-img-top">
+          <a href="./Productos/pelicula_estirable.html" class="stretched-link"></a>
+          <h5 class="card-footer text-center" style="font-family:sans-serif;">Pelicula estirable</h5>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
-      <!-- INTRODUCION -->
-      <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
-        <h3 class="text-center text-muted ">Sobre nosotros</h3>
-        <p class="text-center text-muted">Somos una empresa de distribucion y elaboracion de material de empaque y embalaje con mas de ocho años de experiencia.</p>
-      </div>
-
-      <!-- PRODUCTOS -->
-      <div class="mt-5 d-flex flex-column">
-        <h3 class="text-center text-muted ">Nuestros productos</h3>
-        <div class="d-flex justify-content-evenly align-items-center flex-wrap">
-
-          <!-- PRODUCTO 1 -->
-          <div class="card m-2">
-            <img src="Assets/testProducto.png" class="card-img-top">
-            <a href="#prod1" class="stretched-link"></a>
-            <h5 class="card-footer text-center">Producto 1</h5>
-          </div>
-
-          <!-- PRODUCTO 2 -->
-          <div class="card m-2">
-            <img src="Assets/testProducto.png" class="card-img-top">
-            <a href="#prod2" class="stretched-link"></a>
-            <h5 class="card-footer text-center">Producto 2</h5>
-          </div>
-          
-          <!-- PRODUCTO 3 -->
-          <div class="card m-2">
-            <img src="Assets/testProducto.png" class="card-img-top">
-            <a href="#prod3" class="stretched-link"></a>
-            <h5 class="card-footer text-center">Producto 3</h5>
-          </div>
-
+      <div class="w-100 d-block d-sm-none"></div>
+      <!--PRODUCTO 2-->
+      <div class="col-lg-4 col-md-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="card m-2" style="background-color: blanchedalmond;">
+          <img id="imagen_inicio" src="./Assets/tarima.jpg" class="card-img-top">
+          <a href="./Productos/tarima.html" class="stretched-link"></a>
+          <h5 class="card-footer text-center" style="font-family:sans-serif;">Tarima</h5>
         </div>
-        
-        <!-- BOTON VER MAS -->
-        <!-- <div class="d-flex justify-content-center align-items-center m-4">
-          <a href="/Productos/productos.html" class="btn btn-outline-primary">Mas productos</a>
-        </div> -->
       </div>
-
-      <!-- CONTACTO -->
-
-      <div class="custom_panel mt-3 d-flex justify-content-center align-items-center">
-          <a href="/Contacto/contacto.html" class="btn btn-lg btn-dark">CONTACTO</a>
-      </div>
-
-      <!-- END PAGE -->
-
-    <footer class="mt-auto bg-light d-flex flex-column justify-content-center align-items-center py-3 border-top">
-        <div class="col-md-4 d-flex align-items-center justify-content-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                Logo
-            </a>
-            <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+      <div class="w-100 d-block d-sm-none"></div>
+      <!--PRODUCTO 3-->
+      <div class="col-lg-4 col-md-4 col-md-4 col-sm-4 col-xs-12">
+        <div class="card m-2" style="background-color: blanchedalmond;">
+          <img id="imagen_inicio" src="./Assets/fleje.jpg" class="card-img-top">
+          <a href="./Productos/fleje.html" class="stretched-link"></a>
+          <h5 class="card-footer text-center" style="font-family:sans-serif;">Fleje</h5>
         </div>
-        <ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
-            <li class="ms-3">
+      </div>
+    </div>
+
+    <br>
+
+    <!--BOTON MAS PRODUCTOS-->
+    <div class="align-items-center text-center">
+      <a href="./Productos/productos.html" class="btn btn-lg btn-dark align-items-center"
+        style="font-family: Impact;">MAS PRODUCTOS</a>
+    </div>
+
+
+  </div>
+
+
+  <!-- END PAGE -->
+  <br>
+  <footer class="mt-auto bg-light d-flex flex-column justify-content-center align-items-center py-3 border-top">
+   
+    <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="./Assets/logo.png" width="60px" height="45px">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">Empaques Sofia</span>
+      </ul>
+      <!--  <li class="ms-3">
                 <a class="text-muted" href="#twitter">
                     <i class="bi bi-twitter"></i>
                 </a>
@@ -134,19 +151,26 @@
                 <a class="text-muted" href="#instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-            </li>
-            <li class="ms-3">
-                <a class="text-muted" href="#facebook">
-                    <i class="bi bi-facebook"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
+            </li> -->
+        <li class="ms-3">
+          <a class="text-muted"
+            href="https://www.facebook.com/people/Empaques-Sophia/pfbid02iQq6qHHAqmZir9UovrCoe1figdi7xPWyK63uXh7Vcv7Fv4hUjmKXFYJ82Ugr23ubl/?mibextid=ZbWKwL">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="ms-3">
+          <!--BOTON CONTACTO-->
+          <a href="./Contacto/contacto.html" class="btn btn-sm btn-secondary align-items-center"
+            style="font-family: Impact;">CONTACTO</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
